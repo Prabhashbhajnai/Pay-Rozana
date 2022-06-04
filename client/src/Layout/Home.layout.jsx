@@ -7,7 +7,6 @@ const HomeLayout = (props) => {
     return (
         <div>
             <Navbar className='w-full' />
-            Home Layout
             {props.children}
         </div>
     );
