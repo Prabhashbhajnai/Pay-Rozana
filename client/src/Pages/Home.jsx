@@ -33,7 +33,7 @@ const Home = () => {
     ]);
 
     return (
-        <div className='overflow-x-hidden'>
+        <div className='overflow-x-hidden w-full'>
             <div className='flex flex-col mx-16 items-center mt-5'>
                 <div className='flex w-full justify-evenly md:items-center'>
                     <div className='container w-full sm:w-1/3 align-left '>
@@ -78,10 +78,9 @@ const Home = () => {
                 </div>
                 <div className='flex flex-col items-center w-full mt-5'>
                     <h1 className='text-2xl font-bold'>About Us</h1>
-                    <div className='bg-grey-50 mt-10 '>
-                        <div className='flex flex-wrap w-full mt-12 text-xl text-aboutGreen-50 font-bold'>
-                            <p>We are just a bunch of college students who are trying to solve the problem of small businesses who take loans from the banks.</p>
-                            <p>We are bringing the idea of repayment of EMIs on daily basis so that there will be no burden of payment of EMI at the end of the month.</p>
+                    <div className='flex bg-grey-50 mt-10 w-full rounded-lg justify-center'>
+                        <div className='flex mx-5 mt-12 text-2xl text-aboutGreen-50 md:w-2/4 font-bold mb-5'>
+                            <p className=''>We are just a bunch of college students who are trying to solve the problem of small businesses who take loans from the banks. <br />We are bringing the idea of repayment of EMIs on daily basis so that there will be no burden of payment of EMI at the end of the month.</p>
                         </div>
                     </div>
                 </div>
