@@ -2,21 +2,21 @@ import React from 'react';
 import { Route } from "react-router-dom";
 
 // Layout
-import SignUpLayout from '../Layout/SignUp.layout';
+import PaymentLayout from '../Layout/Payment.layout';
 
-const SignUpLayoutHOC = ({ component: Component, ...rest }) => {
+const PaymentLayoutHOC = ({ component: Component, ...rest }) => {
     return (
         <>
             <Route
                 {...rest}
                 component={(props) => (
-                    <SignUpLayout>
+                    <PaymentLayout>
                         <Component {...props} />
-                    </SignUpLayout>
+                    </PaymentLayout>
                 )}
             />
         </>
     );
 };
 
-export default SignUpLayoutHOC;
+export default PaymentLayoutHOC;
