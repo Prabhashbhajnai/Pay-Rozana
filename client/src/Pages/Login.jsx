@@ -7,8 +7,8 @@ const Login = () => {
   return (
     <>
          <div className='flex flex-row mt-20 '>
-                <div className='w-3/4 m-4 text-start sm:w-1/2'>
-                <div className='w-3/4 sm:w-1/2 bg-slate-100 rounded p-5 sm: m-auto  '>
+                <div className='w-1/2 m-4 text-start sm:w-1/2'>
+                <div className='w-full sm:w-1/2 bg-slate-100 rounded p-5 ml-1 sm:m-auto  '>
                 <h1 className='font-bold text-2xl mb-5'>Log in</h1>
                 <form action="" className='flex flex-col'>
                     <label htmlFor="" className='font-bold mt-4'>Enter your mail</label>
@@ -20,7 +20,7 @@ const Login = () => {
                 </div>
                 </div>
                 
-                <div className='w-1/4 h-96 items-start  sm:w-1/2 '>
+                <div className='w-full sm:w-1/4 h-113  items-start  sm:w-1/2 '>
                         <img
                             src={person4}
                             alt="person"
