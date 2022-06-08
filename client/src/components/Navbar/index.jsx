@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 // assets
@@ -50,22 +51,24 @@ const LargeNav = () => {
     return (
         <>
             <div className='md:flex mt-5 h-16 gap-24 px-5 items-center hidden md:block'>
-                <div className='flex w-56 items-center gap-2'>
-                    <div className=''>
-                        <img
-                            src={logo}
-                            alt="log"
-                            className='w-full h-full'
-                        />
+                <Link to={"/"}>
+                    <div className='flex w-56 items-center gap-2'>
+                        <div className=''>
+                            <img
+                                src={logo}
+                                alt="log"
+                                className='w-full h-full'
+                            />
+                        </div>
+                        <div className='w-40'>
+                            <img
+                                src={logoText}
+                                alt="logoText"
+                                className='w-full h-full mt-2'
+                            />
+                        </div>
                     </div>
-                    <div className='w-40'>
-                        <img
-                            src={logoText}
-                            alt="logoText"
-                            className='w-full h-full mt-2'
-                        />
-                    </div>
-                </div>
+                </Link>
                 <button className='font-bold text-xl'>
                     About Us
                 </button>
@@ -75,6 +78,11 @@ const LargeNav = () => {
                 <button className='font-bold text-xl'>
                     Contact Us
                 </button>
+                <Link to={"/dashboard"}>
+                    <button className='font-bold text-xl'>
+                        Dashboard
+                    </button>
+                </Link>
             </div>
         </>
     )

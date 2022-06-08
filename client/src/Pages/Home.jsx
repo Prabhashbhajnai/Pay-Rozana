@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Assets
 import person from "../Assets/Person.svg";
@@ -52,8 +53,12 @@ const Home = () => {
                 <div>
                     <h1 className='font-bold text-3xl'>Register Now</h1>
                     <div className='flex flex-col gap-5 mt-6 items-center'>
-                        <button className='text-white bg-black w-32 h-10 text-xl'>Login</button>
-                        <button className='text-white bg-black w-32 h-10 text-xl'>Sign up</button>
+                        <Link to={"/login"}>
+                            <button className='text-white bg-black w-32 h-10 text-xl'>Login</button>
+                        </Link>
+                        <Link to={"/signup"}>
+                            <button className='text-white bg-black w-32 h-10 text-xl'>Sign up</button>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex flex-col mt-16 font-bold text-2xl w-full items-center'>
@@ -67,7 +72,7 @@ const Home = () => {
                             }
                         </div>
                         <div className='block content-center gap-16 sm:hidden'>
-                            
+
                             {
                                 teamList.map((sources) => (
                                     <TeamCard {...sources} />
@@ -85,7 +90,7 @@ const Home = () => {
                     </div>
                 </div>
 
-              
+
 
             </div>
         </div>
