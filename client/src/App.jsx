@@ -11,6 +11,7 @@ import temp from "./components/temp";
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import SignUp from "./Pages/SignUp";
+import Payment from "./Pages/Payment";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <LoginLayoutHOC path="/login" exact component={Login} />
       <LoginLayoutHOC path="/signup" exact component={SignUp} />
       <DashboardLayoutHOC path="/dashboard" exact component={temp} />
-      <PaymentLayoutHOC path="/payment" exact component={temp} />
+      <PaymentLayoutHOC path="/payment" exact component={Payment} />
     </>
   );
 }
