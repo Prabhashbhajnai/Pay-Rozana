@@ -9,7 +9,7 @@ const HomeLayout = (props) => {
         <div className='mb-5'>
             <Navbar className='w-full' />
             {props.children}
-            <Footer className='w-full position: fixed bottom: 0px'></Footer>
+            <Footer className='w-full '></Footer>
         </div>
     );
 };

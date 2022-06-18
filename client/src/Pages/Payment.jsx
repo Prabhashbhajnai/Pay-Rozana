@@ -1,11 +1,21 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 // Assets
 import qr from "../Assets/QR.svg";
 
+function ScrollToTopOnMount() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+}
+
 const Payment = () => {
     return (
         <>
+            <ScrollToTopOnMount></ScrollToTopOnMount>
             <div className='flex flex-row justify-evenly lg:mt-10 items-center'>
                 <div className=''>
                     
