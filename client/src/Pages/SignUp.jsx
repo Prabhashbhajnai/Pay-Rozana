@@ -1,12 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 //Assests
 import phone from "../Assets/phone.svg";
 
+
+function ScrollToTopOnMount() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    return null;
+}
+
 const SignUp = () => {
     return (
         <>
+            <ScrollToTopOnMount></ScrollToTopOnMount>
             <div className='flex '>
                 <div className='w-full sm:w-3/4  '>
                     <div className='m-auto'>

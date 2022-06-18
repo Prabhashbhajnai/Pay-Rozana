@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 //Assests
 import person4 from "../Assets/person4.svg";
@@ -15,7 +16,10 @@ const Login = () => {
               <input className='bg-slate-300 mt-2 h-9' required type="email" />
               <label htmlFor="" className='font-bold mt-4' >Enter password</label>
               <input className='bg-slate-300 mt-2 h-9' required type="password" />
-              <input type="submit" value="Submit" className='bg-sky-600 text-white h-9 mt-8' ></input>
+              <Link to={"/dashboard"}>
+
+              <input type="submit" value="Submit" className='bg-sky-600 text-white w-full h-9 mt-8' ></input>
+              </Link>
             </form>
           </div>
         </div>

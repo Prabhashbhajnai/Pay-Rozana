@@ -12,8 +12,11 @@ const MobileNav = () => {
 
     return (
         <>
+                
             <div className='md:hidden flex items-center justify-between mr-5 ml-2 h-20'>
+            <Link to={"/"}>
                 <div className='flex w-56 items-center gap-2'>
+                <Link to={"/"}>
                     <div className=''>
                         <img
                             src={logo}
@@ -21,23 +24,33 @@ const MobileNav = () => {
                             className='w-full h-full'
                         />
                     </div>
+                    </Link>
+                    
+                    <Link to={"/"}>
                     <div className='w-40'>
                         <img
                             src={logoText}
                             alt="logoText"
                             className='w-full h-full mt-2'
-                        />
+                            />
                     </div>
+                    </Link>
+                    
                 </div>
+                </Link>
+                           
 
                 <div onClick={() => setIsHamburgerOpen(prev => !prev)} className="w-12 h-12">
                     <GiHamburgerMenu className='text-2xl mt-3' />
                 </div>
                 {isHamburgerOpen && (
-                    <div className="absolute shadow-lg py-3 top-20 -right-3  z-20 bg-white w-027 flex flex-col gap-2 justify-items-center">
+                    <div className="absolute shadow-lg py-3 top-20 -right-3  z-20 bg-white w-027 flex flex-col gap-2 ">
                         <button className='font-bold'>About Us</button>
                         <button className='font-bold'>Team</button>
                         <button className='font-bold'>Contact Us</button>
+                        <Link to={"/dashboard"}>
+                        <button className='font-bold w-full text-center m-auto'>Dashborad</button>
+                        </Link>
                     </div>
                 )}
 
