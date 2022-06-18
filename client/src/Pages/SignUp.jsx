@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 //Assests
 import phone from "../Assets/phone.svg";
@@ -19,28 +20,32 @@ const SignUp = () => {
                             <label htmlFor="" className=''>
                                 Enter your Email
                             </label>
-                            <input type="email" placeholder='Enter your Email' className=' ' required name="" id="" />
+                            <input type="email"  className=' ' required name="" id="" />
                             <label htmlFor="" className=''>
                                 Enter your name
                            </label>
-                            <input type="text" placeholder='Enter your name' className='  ' required name="" id="" />
+                            <input type="text" className='  ' required name="" id="" />
                             <label htmlFor="" className=''>
                                 Enter your password
                            </label>
-                            <input type="password" placeholder='Enter your password' required className=' ' name="" id="" />
+                            <input type="password"  required className=' ' name="" id="" />
                             <label htmlFor="" className=''>
                                 Re-Enter your password
                            </label>
-                            <input type="password" required placeholder='Re-Enter your password' className=' ' name="" id="" />
+                            <input type="password" required  className=' ' name="" id="" />
                             <label htmlFor="" className=''>
                                 EMI Amount
                            </label>
-                            <input type="text" placeholder='Enter your EMI Amount' required className=' ' name="" id="" />
+                            <input type="text"  required className=' ' name="" id="" />
                             <label htmlFor="" className=''>
                                 Number of working days
                            </label>
-                            <input type="text" placeholder='No. of working days' required className=' ' name="" id="" />
-                            <input type="submit" value="Continue" className='bg-sky-600 text-white h-9 mt-8 ' ></input>
+                            <input type="text" required className=' ' name="" id="" />
+                           
+                            <Link to={"/dashboard"}>
+                            <input type="submit" value="Continue" className='bg-sky-600 text-white w-full h-9 mt-8 ' ></input>
+                        </Link>                           
+                            
                         </form>
                     </div>
                 </div>

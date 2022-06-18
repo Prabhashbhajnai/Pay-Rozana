@@ -4,7 +4,7 @@ const LargeFooter = () => {
     return (
         <>
             <div className='text-center w-full '>
-                <h1 className='font-bold text-2xl mb-5'>Contact Us</h1>
+                {/* <h1 className='font-bold text-2xl mb-5'>Contact Us</h1> */}
                 <div className='bg-black text-white  '>
                     <div className='w-full flex justify-between'>
                         <div className='w-1/2 text-left p-6'>
