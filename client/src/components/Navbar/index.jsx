@@ -45,11 +45,16 @@ const MobileNav = () => {
                 </div>
                 {isHamburgerOpen && (
                     <div className="absolute shadow-lg py-3 top-20 -right-3  z-20 bg-white w-027 flex flex-col gap-2 ">
-                        <button className='font-bold'>About Us</button>
+        
+                        <Link to={"/aboutus"}>
+                        <button className='font-bold w-full text-center m-auto'>About Us</button>
+                        </Link>
                         <button className='font-bold'>Team</button>
-                        <button className='font-bold'>Contact Us</button>
+                        <Link to={"/contactus"}>
+                        <button className='font-bold w-full text-center m-auto'>Contact Us</button>
+                        </Link>
                         <Link to={"/dashboard"}>
-                        <button className='font-bold w-full text-center m-auto'>Dashborad</button>
+                        <button className='font-bold w-full text-center m-auto'>Dashboard</button>
                         </Link>
                     </div>
                 )}
@@ -82,15 +87,21 @@ const LargeNav = () => {
                         </div>
                     </div>
                 </Link>
+                <Link to={"/aboutus"}>
+
                 <button className='font-bold text-xl'>
                     About Us
                 </button>
+                </Link>
                 <button className='font-bold text-xl'>
                     Team
                 </button>
+                <Link to={"/contactus"}>
+
                 <button className='font-bold text-xl'>
                     Contact Us
                 </button>
+                </Link>
                 <Link to={"/dashboard"}>
                     <button className='font-bold text-xl'>
                         Dashboard

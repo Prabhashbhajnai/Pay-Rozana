@@ -22,7 +22,7 @@ const Home = () => {
         {
             image: person2,
             name: "Harsh Raoka",
-            position: "COO (PayRozana)",
+            position: "CEO (PayRozana)",
             skill: "Full-stack Developer"
         },
         {

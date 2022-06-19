@@ -4,7 +4,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const AboutusLayout = (props) => {
+const DashboardLayout = (props) => {
     return (
         <div className=''>
             <Navbar className='w-full' />
@@ -15,4 +15,4 @@ const AboutusLayout = (props) => {
     );
 };
 
-export default AboutusLayout;
+export default DashboardLayout;

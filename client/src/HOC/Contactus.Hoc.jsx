@@ -2,21 +2,21 @@ import React from 'react';
 import { Route } from "react-router-dom";
 
 // Layout
-import AboutusLayout from '../Layout/Aboutus.Layout';
+import ContactusLayout from '../Layout/Contactus.Layout';
 
-const AboutusLayoutHOC = ({ component: Component, ...rest }) => {
+const ContactusLayoutHOC = ({ component: Component, ...rest }) => {
     return (
         <>
             <Route
                 {...rest}
                 component={(props) => (
-                    <AboutusLayout>
+                    <ContactusLayout>
                         <Component {...props} />
-                    </AboutusLayout>
+                    </ContactusLayout>
                 )}
             />
         </>
     );
 };
 
-export default AboutusLayoutHOC;
+export default ContactusLayoutHOC;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LargeFooter = () => {
     return (
@@ -20,13 +21,13 @@ const LargeFooter = () => {
                             <h1>Quick links:-</h1>
                         </div>
                         <div>
-                            <a href="#">About Us</a>
+                            <a href="/aboutus">About Us</a>
                         </div>
                         <div>
                             <a href="#">Our Team</a>
                         </div>
                         <div>
-                            <a href="#">Contact Us</a>
+                            <a href="/contactus">Contact Us</a>
                         </div>
                     </div>
                 </div>

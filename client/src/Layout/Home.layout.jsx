@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 const HomeLayout = (props) => {
     return (
-        <div className='mb-5'>
+        <div className=''>
             <Navbar className='w-full' />
             {props.children}
             <Footer className='w-full '></Footer>
