@@ -1,6 +1,4 @@
 import React from 'react'
-import { FaRupeeSign } from 'react-icons/fa';
-
 
 //Assests
 import person5 from "../Assets/person5.svg";

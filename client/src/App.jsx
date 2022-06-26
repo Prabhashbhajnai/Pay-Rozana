@@ -6,9 +6,6 @@ import PaymentLayoutHOC from "./HOC/Payment.Hoc";
 import AboutusLayoutHOC from "./HOC/Aboutus.Hoc";
 import ContactusLayoutHOC from "./HOC/Contactus.Hoc";
 
-// component
-import temp from "./components/temp";
-
 // Pages
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";

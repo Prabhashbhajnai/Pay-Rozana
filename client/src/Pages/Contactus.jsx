@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import { useEffect , useState } from 'react';
+import { useEffect } from 'react';
 
 //Assests
-import person4 from "../Assets/person4.svg";
 import { FiPhoneCall } from 'react-icons/fi';
 
 function ScrollToTopOnMount() {

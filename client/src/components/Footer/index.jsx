@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const LargeFooter = () => {
     return (
@@ -24,7 +23,7 @@ const LargeFooter = () => {
                             <a href="/aboutus">About Us</a>
                         </div>
                         <div>
-                            <a href="#">Our Team</a>
+                            Our Team
                         </div>
                         <div>
                             <a href="/contactus">Contact Us</a>
