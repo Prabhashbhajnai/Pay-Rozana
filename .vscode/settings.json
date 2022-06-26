@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0aa316b9-1950-4145-b5af-e9ddb386f602/microsoft.web/sites/subscriptions/0aa316b9-1950-4145-b5af-e9ddb386f602/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/ReactTestting",
+    "appService.deploySubpath": "."
+}
