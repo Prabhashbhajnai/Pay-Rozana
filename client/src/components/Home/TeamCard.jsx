@@ -1,8 +1,5 @@
 import React from 'react';
 
-// assets
-import person1 from "../../Assets/person1.svg"
-
 const TeamCard = (props) => {
     return (
         <>

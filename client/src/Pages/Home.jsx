@@ -12,7 +12,7 @@ import TeamCard from '../components/Home/TeamCard';
 
 const Home = () => {
 
-    const [teamList, setTeamList] = useState([
+    const [teamList] = useState([
         {
             image: person1,
             name: "Prabhash Bhajani",
