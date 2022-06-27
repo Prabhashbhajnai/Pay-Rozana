@@ -18,21 +18,21 @@ const Contactus = () => {
           <h1 className='text-3xl font-semibold'>Get in touch with us!</h1>
         </div>
 
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center w-auto'>
           <div className='md:flex justify-center gap-24 mt-10'>
             <div className='text-center'>
               <h1 className='text-lg font-semibold'>Your Name</h1>
-              <input required type="text" placeholder='John Doe' className='shadow-xl border-2 rounded-lg w-96 h-10 text-center' />
+              <input required type="text" placeholder='John Doe' className='shadow-xl border-2 rounded-lg md:w-96 h-10 text-center w-screen' />
             </div>
             <div className='text-center mt-3'>
               <h1 className='text-lg font-semibold'>Your Email</h1>
-              <input required type="email" placeholder='johndoe@email.com' className='shadow-xl border-2 rounded-lg w-96 h-10 text-center' />
+              <input required type="email" placeholder='johndoe@email.com' className='shadow-xl border-2 rounded-lg md:w-96 h-10 text-center w-screen' />
             </div>
           </div>
 
           <div className='md:hidden text-center mt-3'>
             <h1 className='text-lg font-semibold'>Your Message</h1>
-            <textarea rows="5" cols="49" placeholder='Type Message' className='shadow-xl border-2 rounded-lg text-center' />
+            <textarea rows="5" placeholder='Type Message' className='shadow-xl border-2 rounded-lg text-center w-screen' />
           </div>
           <div className='hidden md:block text-center mt-6'>
             <h1 className='text-lg font-semibold'>Your Message</h1>

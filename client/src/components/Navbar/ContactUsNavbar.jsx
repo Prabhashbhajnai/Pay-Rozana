@@ -44,7 +44,7 @@ const MobileNav = () => {
                     <GiHamburgerMenu className='text-2xl mt-3' />
                 </div>
                 {isHamburgerOpen && (
-                    <div className="absolute shadow-lg py-3 top-20 -right-3  z-20 w-027 flex flex-col gap-2 ">
+                    <div className="absolute shadow-lg py-3 bg-white top-20 -right-3  z-20 w-027 flex flex-col gap-2 ">
         
                         <Link to={"/aboutus"}>
                         <button className='font-bold w-full text-center m-auto'>About Us</button>
