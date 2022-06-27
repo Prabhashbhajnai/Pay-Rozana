@@ -23,6 +23,12 @@ module.exports = {
         aboutGreen: {
           50: '#1D5329'
         }
+      },
+      skew: {
+        '19': '19deg',
+      },
+      translate: {
+        '62': '17rem',
       }
     },
   },

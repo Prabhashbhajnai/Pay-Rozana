@@ -34,7 +34,7 @@ const Login = () => {
           </div>
         </div>
 
-        <div className='w-full sm:w-1/4 h-113  items-start  sm:w-1/2 '>
+        <div className='w-full sm:w-1/4 h-113  items-start '>
           <img
             src={person4}
             alt="person"

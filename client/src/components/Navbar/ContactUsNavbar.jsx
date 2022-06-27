@@ -112,10 +112,10 @@ const LargeNav = () => {
     )
 }
 
-const Navbar = () => {
+const ContactUsNavbar = () => {
     return (
         <>
-            <nav className="lg:sticky lg:top-0 bg-white z-40 py-0 flex shadow-md lg:shadow-none w-full flex-col">
+            <nav className="lg:top-0 z-40 py-0 flex shadow-md lg:shadow-none w-full flex-col">
                 <MobileNav />
                 <LargeNav />
             </nav>
@@ -123,4 +123,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default ContactUsNavbar
