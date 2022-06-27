@@ -23,15 +23,12 @@ jobs:
       uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          inlineScripts: |
-            az account set --subscription 0aa316b9-1950-4145-b5af-e9ddb386f602
     
     - name: Upload to Azure blob storage
       uses: azure/CLI@v1
       with:
         azcliversion: 2.37.0
         inlineScript: |
-            az account list
             az storage blob upload-batch --account-name payrozana -d '$web' -s ./production-files
     
     - name: Azure logout
