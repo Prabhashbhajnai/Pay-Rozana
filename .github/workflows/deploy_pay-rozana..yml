@@ -30,7 +30,7 @@ jobs:
         azcliversion: 2.0.72
         inlineScript: |
             az account list
-            az account set --name "Azure Pass - Sponsorship"
+            az account set --subscription 0aa316b9-1950-4145-b5af-e9ddb386f602
             az storage blob upload-batch --account-name payrozana -d '$web' -s ./production-files
     
     - name: Azure logout
